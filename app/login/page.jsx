@@ -5,6 +5,7 @@ import {useRouter} from "next/navigation";
 import NavGuest from "@/app/components/navGuest";
 import bg from '/public/bg-login.jpg'
 import Image from "next/image";
+import googleIMG from "public/google.png"
 // import {
 //     auth,
 //     signInUserWithEmailAndPassword,
@@ -55,12 +56,15 @@ const LoginForm = () => {
 
                         <div
                             // onClick={handleGoogleLogIn}
-                            className="bg-black/[0.05] text-white w-full py-4 mt-10 rounded-full transition-transform hover:bg-black/[0.8] active:scale-90 flex justify-center items-center gap-4 cursor-pointer group"
+                            className="bg-sky-200 text-white w-full py-4 mt-10 rounded-full transition-transform hover:bg-sky-400 active:scale-90 flex justify-center items-center gap-4 cursor-pointer group"
                         >
 
-                        <span className="font-medium text-black group-hover:text-white">
-              Войти через Google
-            </span>
+                            <span className="text-xl font-bold text-black group-hover:text-white " >
+                              Войти через Google
+
+                            </span>
+                            <Image src={googleIMG} alt="googleImage" className="h-6 w-6 animatecss group-hover:animatecss-swing group-hover:w-7 group-hover:h-7"/>
+
                         </div>
                         <form
                             onSubmit={(e) => {
