@@ -18,7 +18,7 @@ export default function Welcome() {
         });
         return () => unsubscribe(); // unsubscribe from the listener when the component unmounts
     }, []);
-    setCookie('key', 'value');
+
     return (
         <>
             <header><Navigation onSetOpenSignIn={setOpenModalWindow} login = {false} /></header>
