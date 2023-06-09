@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-
+  min-width: 400px;
 }
 
 @media (prefers-color-scheme: dark) {
