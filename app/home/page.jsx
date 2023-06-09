@@ -75,7 +75,7 @@ export default function Home() {
             <header><Navigation userAuth={true}/></header>
             <div>
                 {user !== null &&
-                    <>{user.displayName}</>
+                    <>Привет, {user.displayName}, ты на домашней странице.</>
 
                 }
             </div>
