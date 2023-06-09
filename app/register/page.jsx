@@ -5,7 +5,7 @@ import {useRouter} from "next/navigation";
 import NavGuest from "@/app/components/navGuest";
 import bg from "/public/bg-login.jpg";
 import Image from "next/image";
-import googleIMG from "@/public/google.png";
+import googleIMG from "public/google.png";
 // import { FcGoogle } from "react-icons/fc";
 // import {
 //     auth,
