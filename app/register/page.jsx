@@ -110,9 +110,10 @@ const RegisterForm = () => {
                 </div>
                 <div
                     className="w-[100%] bg-slate-400 bg-cover bg-left-top hidden lg:block"
-
+                    style={{
+                        backgroundImage: "url('/bg-login.jpg')",
+                    }}
                 >
-                    <Image src={bg} alt='Background'/>
                 </div>
             </main>
         </>
