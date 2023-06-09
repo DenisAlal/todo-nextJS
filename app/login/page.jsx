@@ -39,7 +39,7 @@ const LoginForm = () => {
             <main className="flex lg:h-[100vh]">
                 <div className="w-full lg:w-[60%] p-8 md:p-14 flex items-center justify-center lg:justify-start">
                     <div className="p-8 w-[600px]">
-                        <h1 className="text-6xl font-semibold">Авторизация</h1>
+                        <div className="text-2xl lg:text-4xl font-semibold">Авторизация</div>
                         <p className="mt-6 ml-1">
                             У вас нет аккаунта ?{" "}
                             <span
@@ -101,13 +101,8 @@ const LoginForm = () => {
                         </form>
                     </div>
                 </div>
-                <div
-                    className="w-[100%] bg-slate-400 bg-cover bg-left-top hidden lg:block"
-                    style={{
-                        backgroundImage: "url('/bg-login.jpg')",
-                    }}
-                >
-                </div>
+                {}
+
             </main>
         </>
     );
