@@ -3,6 +3,8 @@
 import React, {useState, useEffect} from "react";
 import {useRouter} from "next/navigation";
 import NavGuest from "@/app/components/navGuest";
+import bg from "/public/bg-login.jpg";
+import Image from "next/image";
 // import { FcGoogle } from "react-icons/fc";
 // import {
 //     auth,
@@ -108,10 +110,10 @@ const RegisterForm = () => {
                 </div>
                 <div
                     className="w-[100%] bg-slate-400 bg-cover bg-left-top hidden lg:block"
-                    style={{
-                        backgroundImage: "url('/bg-login.jpg')",
-                    }}
-                ></div>
+
+                >
+                    <Image src={bg} alt='Background'/>
+                </div>
             </main>
         </>
     );

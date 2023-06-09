@@ -1,8 +1,10 @@
 "use client";
 
-import React, { useState} from "react";
+import React, {useState} from "react";
 import {useRouter} from "next/navigation";
 import NavGuest from "@/app/components/navGuest";
+import bg from '/public/bg-login.jpg'
+import Image from "next/image";
 // import {
 //     auth,
 //     signInUserWithEmailAndPassword,
@@ -98,10 +100,10 @@ const LoginForm = () => {
                 </div>
                 <div
                     className="w-[100%] bg-slate-400 bg-cover bg-left-top hidden lg:block"
-                    style={{
-                        backgroundImage: "url('/bg-login.jpg')",
-                    }}
-                ></div>
+
+                >
+                    <Image src={bg} alt='Background'/>
+                </div>
             </main>
         </>
     );
