@@ -1,8 +1,9 @@
-"use client"
+"use client";
 import ModalWindow from "./components/modalWindow.jsx";
 import {useState} from "react";
 import NavGuest from "./components/navGuest";
 import { setCookie } from 'cookies-next';
+
 export default function Home() {
 
     const [openModalWindow, setOpenModalWindow] = useState(false)
