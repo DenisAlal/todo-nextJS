@@ -11,7 +11,6 @@ export default function Home() {
     return (
         <div >
             <div >
-                {name}
                 abobaaa
             </div>
         </div>
