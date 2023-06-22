@@ -3,7 +3,7 @@ import Link from "next/link";
 import {auth, signOutUser} from "@/firebase/auth";
 import {useRouter} from "next/navigation";
 import {getCookie} from "cookies-next";
-
+const textToDO = "ToDO"
 const login = "/login"
 const back = "/"
 export default function Navigation(props) {
@@ -31,21 +31,21 @@ export default function Navigation(props) {
         }
     };
     return (
-        <nav className="w-full bg-current shadow bg-sky-600">
+        <nav className="bg-current shadow bg-green-600">
             <div className="justify-between  mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
                         {authUser !== true &&
                             <>
                                 <Link href="/"><h2
-                                    className="bg-transparent w-full rounded-lg  hover:text-fuchsia-300 text-white text-2xl font-bold">ToDO</h2>
+                                    className="bg-transparent w-full rounded-lg  hover:text-gray-300 text-white text-2xl font-bold ">{textToDO}</h2>
                                 </Link>
                             </>
                         }
                         {authUser === true &&
                             <>
                                 <Link href="/home"><h2
-                                    className="bg-transparent w-full rounded-lg  hover:text-fuchsia-300 text-white text-2xl font-bold">ToDO</h2>
+                                    className="bg-transparent w-full rounded-lg  hover:text-gray-300 text-white text-2xl font-bold">{textToDO}</h2>
                                 </Link>
                             </>
                         }
@@ -101,17 +101,17 @@ export default function Navigation(props) {
                                     {!loginCheck
                                         &&
                                         <>
-                                            <button
-                                                id="btn"
-                                                className="bg-transparent w-full py-4 rounded-lg duration-500 hover:text-fuchsia-300 text-white"
-                                                onClick={() => modalOpenClick()}
-                                            >
-                                                Открыть модальное окно
-                                            </button>
+                                            {/*<button*/}
+                                            {/*    id="btn"*/}
+                                            {/*    className="bg-transparent w-full py-4 rounded-lg duration-500 hover:text-fuchsia-300 text-white"*/}
+                                            {/*    onClick={() => modalOpenClick()}*/}
+                                            {/*>*/}
+                                            {/*    Открыть модальное окно*/}
+                                            {/*</button>*/}
                                             <Link href={login}>
                                                 <button
                                                     id="btn"
-                                                    className="bg-transparent w-full py-4 rounded-lg duration-500 hover:text-fuchsia-300 text-white"
+                                                    className="bg-transparent w-full py-2 rounded-lg duration-500  text-white hover:bg-green-300 px-5 hover:text-black"
                                                 >
                                                     Войти
                                                 </button>
@@ -122,7 +122,7 @@ export default function Navigation(props) {
                                         <Link href={back}>
                                             <button
                                                 id="btn"
-                                                className="bg-transparent w-full py-4 rounded-lg duration-500 hover:text-fuchsia-300 text-white"
+                                                className="bg-transparent w-full py-2 rounded-lg duration-500  text-white hover:bg-green-300 px-5 hover:text-black"
                                             >
                                                 Назад
                                             </button>
@@ -136,7 +136,7 @@ export default function Navigation(props) {
                                 <>
                                     <button
                                         id="btn"
-                                        className="bg-transparent w-full py-4 rounded-lg duration-500 hover:text-fuchsia-300 text-white"
+                                        className="bg-transparent w-full py-2 rounded-lg duration-500  text-white hover:bg-green-300 px-5 hover:text-black"
                                         onClick={handleSignOut}
                                     >
                                         Выйти

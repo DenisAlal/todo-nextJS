@@ -7,6 +7,7 @@ import {
     updateProfile,
     GoogleAuthProvider,
     signInWithPopup,
+    onAuthStateChanged,
 } from "firebase/auth";
 
 export const auth = getAuth(app);
@@ -46,7 +47,7 @@ export const signUpUserWithEmailAndPassword = async (
         await updateProfile(auth.currentUser, {
             displayName: username,
         });
-        //console.log(userCredential.user);
+        console.log(userCredential.user);
         console.log(auth);
     } catch (error) {
         console.log(error);
@@ -64,7 +65,6 @@ export const signInUserWithEmailAndPassword = async (email, password) => {
         // console.log(userCredential.user);
     } catch (error) {
         console.log(error);
-
     }
 };
 

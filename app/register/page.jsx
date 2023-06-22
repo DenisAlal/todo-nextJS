@@ -52,21 +52,21 @@ const RegisterForm = () => {
                                 }}
                                 className="underline hover:text-blue-400 cursor-pointer"
                             >
-              Авторизация
-            </span>
+                              Авторизация
+                            </span>
                         </p>
-
-
                         <div
                             onClick={handleGoogleSignIn}
-                            className="bg-sky-200 text-white w-full py-4 mt-10 rounded-full transition-transform hover:bg-sky-400 active:scale-90 flex justify-center items-center gap-4 cursor-pointer group"
-                        >
-
-                            <span className="text-xl font-bold text-black group-hover:text-white " >
+                            className="bg-gray-100 w-full py-4 mt-10 rounded-full transition-transform
+                            hover:bg-gree active:scale-90 flex justify-center items-center
+                            gap-4 cursor-pointer group border-[1px] border-gray-500 p-1
+                            hover:border-green-600 hover:bg-green-200">
+                            <span className="text-xl font-bold text-gray-600 ">
                               Войти через Google
 
                             </span>
-                            <Image src={googleIMG} alt="googleImage" className="h-6 w-6 animatecss group-hover:animatecss-swing group-hover:w-7 group-hover:h-7"/>
+                            <Image src={googleIMG} alt="googleImage"
+                                   className="h-6 w-6 animatecss group-hover:animatecss-swing"/>
 
                         </div>
                         <form onSubmit={(e) => e.preventDefault()}>
@@ -105,7 +105,7 @@ const RegisterForm = () => {
                             </div>
                             <button
                                 onClick={singupHandler}
-                                className="bg-black text-white w-44 py-4 mt-10 rounded-full transition-transform hover:bg-black/[0.8] active:scale-90"
+                                className="bg-green-600 font-bold text-white  py-4 mt-10 rounded-full transition-transform hover:bg-green-700 active:scale-90 px-4"
                             >
                                 Зарегистрироваться
                             </button>

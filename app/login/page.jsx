@@ -54,15 +54,15 @@ const LoginForm = () => {
 
                         <div
                             onClick={handleGoogleLogIn}
-                            className="bg-sky-200 text-white w-full py-4 mt-10 rounded-full transition-transform hover:bg-sky-400 active:scale-90 flex justify-center items-center gap-4 cursor-pointer group"
+                            className="bg-gray-100 w-full py-4 mt-10 rounded-full transition-transform hover:bg-gree active:scale-90 flex justify-center items-center gap-4 cursor-pointer group border-[1px] border-gray-500 p-1 hover:border-green-600 hover:bg-green-200"
                         >
 
-                            <span className="text-xl font-bold text-black group-hover:text-white ">
+                            <span className="text-xl font-bold text-gray-600 ">
                               Войти через Google
 
                             </span>
                             <Image src={googleIMG} alt="googleImage"
-                                   className="h-6 w-6 animatecss group-hover:animatecss-swing group-hover:w-7 group-hover:h-7"/>
+                                   className="h-6 w-6 animatecss group-hover:animatecss-swing"/>
 
                         </div>
                         <form
@@ -94,14 +94,21 @@ const LoginForm = () => {
                             </div>
                             <button
                                 onClick={loginHandler}
-                                className="bg-black text-white w-44 py-4 mt-10 rounded-full transition-transform hover:bg-black/[0.8] active:scale-90"
+                                className="bg-green-600 font-bold text-white w-44 py-4 mt-10 rounded-full transition-transform hover:bg-green-700 active:scale-90"
                             >
                                 Войти
                             </button>
                         </form>
+
                     </div>
                 </div>
-                {}
+                <div
+                    className="w-[100%] bg-slate-400 bg-cover bg-left-top hidden lg:block"
+                    style={{
+                        backgroundImage: "url('/bg-login.jpg')",
+                    }}
+                >
+                </div>
 
             </main>
         </>

@@ -7,11 +7,6 @@ export default function Modal({ isOpen, setOpenModalWindow }) {
                 <div className="rounded-3xl p-10 max-w-lg flex flex-col gap-6 bg-white">
 
                     <h1 className="text-black font-bold text-6xl ">Модальное окно</h1>
-                    {/*<p className="text-lg text-black">*/}
-                    {/*    A confirmation email has been sent to*/}
-                    {/*    <span className="text-black font-bold"> email@company.com</span>. Please*/}
-                    {/*    open it and click the button inside to confirm your subscription.*/}
-                    {/*</p>*/}
                     <button
                         onClick={setOpenModalWindow}
                         id="btn"
